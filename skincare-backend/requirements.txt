@@ -1,0 +1,7 @@
+flask
+flask-cors
+torch
+torchvision
+pillow
+numpy<2.3
+opencv-python==4.10.0.84
