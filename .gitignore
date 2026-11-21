@@ -1,0 +1,12 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Dataset (too large for GitHub)
+skincare-backend/data/train/
+skincare-backend/data/test/
+
+# Backups and local files
+*_backup.py
+.env

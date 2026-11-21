@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Data Driven Beauty</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Splash Screen -->
+  <div id="splash-screen">
+    <h1>Data Driven Beauty</h1>
+    <p>Unleashing Deep Learning in Skincare</p>
+  </div>
+
+  <!-- Main Content -->
+  <div id="main-content" style="display:none;">
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Welcome to Data Driven Beauty</h1>
+      <p>Reveal your natural glow with AI-powered skincare analysis</p>
+    </section>
+
+    <!-- Webcam / Upload Section -->
+    <section class="webcam">
+      <h2>Capture or Upload Your Image</h2>
+      <video id="video" autoplay playsinline></video>
+      <button id="capture">Capture</button>
+      <canvas id="canvas" style="display:none;"></canvas>
+
+      <p>or</p>
+      <input type="file" id="file-input" accept="image/*" />
+
+      <img id="captured-image" src="" alt="Selected Image"/>
+      <button id="analyze-button">Analyze</button>
+    </section>
+
+    <!-- Analysis Section -->
+    <section class="analysis">
+      <h2>Analysis Result</h2>
+      <p id="result">Upload an image to see analysis here.</p>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us">
+      <div class="about-container">
+        <h2>About Us</h2>
+        <p>At Data-Driven Beauty, we believe skincare should be personalized, precise, and accessible to everyone. Our mission is to harness AI to analyze your skin health and provide expert recommendations tailored to you.</p>
+        <p>Our platform detects acne, wrinkles, pigmentation, and more, based on your real-time image. Simply upload or take a photo to get smarter skincare advice.</p>
+        <p>Whether you're a skincare novice or expert, we aim to help you find products that truly work, all backed by science and technology.</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+  }
+  
+  /* Splash Screen */
+  #splash-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffdee9, #b5fffc);
+    text-align: center;
+    animation: fadeOut 2s ease 2s forwards;
+  }
+  
+  #splash-screen h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  #splash-screen p {
+    font-size: 1.2rem;
+  }
+  
+  /* Hide splash screen */
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding: 60px 20px;
+    text-align: center;
+    background: #ffe8f1;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  /* Webcam Section */
+  .webcam {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers children horizontally */
+    justify-content: center;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  video {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  
+  button#capture {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+  }
+  
+ 
+#captured-image {
+  margin-top: 20px;
+  width: 300px;
+  display: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+  button#analyze {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background: #ff69b4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  /* Analysis Section */
+  .analysis {
+    padding: 40px 20px;
+    background: #f0f0f0;
+    text-align: center;
+  }
+  
+ /* About Us Section Styles */
+#about-us {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: justify;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Add a subtle border and padding to the section */
+#about-us {
+    border-top: 5px solid #4CAF50;
+}
